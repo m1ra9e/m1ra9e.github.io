@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link href="/favicon.ico" rel="icon" type="image/x-icon">
+    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <script src="js/css.js" type="text/javascript"></script>
+    <title>Search</title>
+</head>
+<body>
+
+<div id="logo" tabindex="1"></div>
+
+<div hidden id="search">
+    <form id="search-form">
+        <p>
+            <input id="search-text" name="search-text" placeholder="Enter your search text." type="text">
+            <input id="search-btn" type="button" value="&#8658;">
+        </p>
+    </form>
+</div>
+
+<div hidden id="empty-info">
+    <p>
+        The search has not given any results.
+        <br/><br/>
+        <span>Attention!</span>
+        <br/>
+        <span>At the moment, the search service works incorrectly. Technical work is underway.</span>
+    </p>
+</div>
+
+<div hidden id="info">
+    <div class="box" id="wrapper">
+
+        <div class="box" id="header">
+            <p id="button_header"><a href="index.html">=Shamsutdinov_Clan=</a></p>
+            <p><span id="italic" title="Horde">[Nukers live in the shadows and watching for you]</span></p>
+        </div>
+
+        <!-- [Блок сообщения] -->
+        <div class="box" id="spec_mes">
+            <p align="center">
+            <span class="spec_mes">
+                Внимание! На данный момент поисковой сервис не исправен. Ведутся технические работы.
+            </span>
+            </p>
+        </div>
+        <!-- Концовка [Блок сообщения] -->
+
+
+        <!-- [Блок бегущей строки] -->
+        <div class="box" id="runner">
+            <div class="marquee">
+                <p>Текст бегущей строки.</p>
+            </div>
+        </div>
+        <!-- Концовка [Блок бегущей строки] -->
+
+
+        <div class="box" id="content">
+
+            <h1>Добро пожаловать!</h1>
+
+            <!-- [Блок *] -->
+            <p id="button"><a href="http://google.com" target="_blank">Перейти</a></p>
+            <!-- Концовка [Блок *] -->
+
+            <!-- [Блок Вкладки] -->
+            <!-- Tab links -->
+            <div class="tab">
+                <button class="tab-link">London</button>
+                <button class="tab-link">Paris</button>
+                <button class="tab-link">Tokyo</button>
+            </div>
+
+            <!-- Tab content -->
+            <div class="tab-content" id="London">
+                <h3>London</h3>
+                <p>London is the capital city of England.</p>
+                <p>Great Britain</p>
+                <span class="tab-close">x</span>
+            </div>
+
+            <div class="tab-content" id="Paris">
+                <h3>Paris</h3>
+                <p>Paris is the capital of France.</p>
+                <span class="tab-close">x</span>
+            </div>
+
+            <div class="tab-content" id="Tokyo">
+                <h3>Tokyo</h3>
+                <p>Tokyo is the capital of Japan.</p>
+                <span class="tab-close">x</span>
+            </div>
+            <!-- Концовка [Блок Вкладки] -->
+
+        </div>
+        <div class="box" id="footer">
+            <p>
+                Horde <a href="#top" rel="nofollow">Shamsutdinov clan</a>
+                <br/> &copy; Shamsutdinov Lenar [MIRAGE], 2021
+                <label for="bottom_words"></label>
+                <br/><span id="bottom_words" title="Demon">[You always have a choice: be hunter or hunted]</span>
+            </p>
+        </div>
+    </div>
+</div>
+
+<script defer src="js/script.js" type="text/javascript"></script>
+</body>
+</html>

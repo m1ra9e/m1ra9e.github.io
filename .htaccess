@@ -1,0 +1,12 @@
+# Устанавливаем дефолтную кодировку
+# для нашего проекта
+# (Работа с "httpd.conf")
+AddDefaultCharset UTF-8
+
+# Отключаем magic_quotes_gpc
+# (Работа с "php.ini")
+php_flag magic_quotes_gpc Off
+php_flag magic_quotes_runtime Off
+
+# Запрет выдачи листинга каталога и подкаталогов (если нужно зактрыть только 1 каталок, то файл нужно поместить только в него)
+Options -Indexes
