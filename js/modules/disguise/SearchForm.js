@@ -24,21 +24,23 @@ export default class SearchForm {
     }
 
     _checkSearchRequest() {
-        // gets the value of the current date
-        let today = new Date();
-        let yyyy = today.getFullYear();
-        let mm = String(today.getMonth() + 1).padStart(2, '0'); // January is 0!
-        let dd = String(today.getDate()).padStart(2, '0');
-        today = yyyy + '.' + mm + '.' + dd;
-
         // compares the value of the current date with the value entered in the input field
-        if (today == this.searchTextElement.value.trim()) {
+        if (this._getFormattedCurrentDate() == this.searchTextElement.value.trim()) {
             this._showInfoElement();
             // resets the value entered in the input field
             this.searchTextElement.value = "";
         } else {
             this._showEmptyInfoElement();
         }
+    }
+
+    _getFormattedCurrentDate() {
+        // gets the value of the current date
+        let today = new Date();
+        let yyyy = today.getFullYear();
+        let mm = String(today.getMonth() + 1).padStart(2, '0'); // January is 0!
+        let dd = String(today.getDate()).padStart(2, '0');
+        return yyyy + '.' + mm + '.' + dd;
     }
 
     _showEmptyInfoElement() {
@@ -55,6 +57,15 @@ export default class SearchForm {
 
         // shows an empty information block
         this.emptyInfoElement.hidden = false;
+
+        // fills the current date hint
+        let currentDateHintElement = document.getElementById("current-date-hint");
+        let currentDate = this._getFormattedCurrentDate();
+        if ('textContent' in currentDateHintElement) {
+            currentDateHintElement.textContent = currentDate;
+        } else {
+            currentDateHintElement.innerText = currentDate;
+        }
     }
 
     _showInfoElement() {
