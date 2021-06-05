@@ -1,14 +1,14 @@
 export default class SearchForm {
 
-    constructor(searchElement, searchFormElement, searchTextElement,
-                searchBtnElement, emptyInfoElement, infoElement, newTitleName) {
-        this.searchElement = searchElement;
-        this.searchFormElement = searchFormElement;
-        this.searchTextElement = searchTextElement;
-        this.searchBtnElement = searchBtnElement;
-        this.emptyInfoElement = emptyInfoElement;
+    constructor(infoElement, searchElement, searchTextElement, newTitleName) {
         this.infoElement = infoElement;
+        this.searchElement = searchElement;
+        this.searchTextElement = searchTextElement;
         this.newTitleName = newTitleName;
+
+        this.searchFormElement = document.getElementById("search-form");
+        this.searchBtnElement = document.getElementById("search-btn");
+        this.emptyInfoElement = document.getElementById("empty-info");
     }
 
     activateListeningOfFormActions() {
@@ -25,7 +25,7 @@ export default class SearchForm {
 
     _checkSearchRequest() {
         // compares the value of the current date with the value entered in the input field
-        if (this._getFormattedCurrentDate() == this.searchTextElement.value.trim()) {
+        if (this._getCurrentDate() == this.searchTextElement.value.trim()) {
             this._showInfoElement();
             // resets the value entered in the input field
             this.searchTextElement.value = "";
@@ -34,7 +34,7 @@ export default class SearchForm {
         }
     }
 
-    _getFormattedCurrentDate() {
+    _getCurrentDate() {
         // gets the value of the current date
         let today = new Date();
         let yyyy = today.getFullYear();
@@ -60,7 +60,7 @@ export default class SearchForm {
 
         // fills the current date hint
         let currentDateHintElement = document.getElementById("current-date-hint");
-        let currentDate = this._getFormattedCurrentDate();
+        let currentDate = this._getCurrentDate();
         if ('textContent' in currentDateHintElement) {
             currentDateHintElement.textContent = currentDate;
         } else {

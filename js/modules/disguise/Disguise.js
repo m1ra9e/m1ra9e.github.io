@@ -3,41 +3,37 @@ import SearchForm from "./SearchForm.js";
 
 export default class Disguise {
 
+    static NEW_TITLE_NAME = 'CLAN';
+
     static mask(isEnabled) {
         let logoElement = document.getElementById("logo");
-        let searchElement = document.getElementById("search");
-        let searchFormElement = document.getElementById("search-form");
-        let searchTextElement = document.getElementById("search-text");
-        let searchBtnElement = document.getElementById("search-btn");
-        let emptyInfoElement = document.getElementById("empty-info");
         let infoElement = document.getElementById("info");
-        let newTitleName = 'CLAN';
 
         if (isEnabled) {
-            Disguise._hideContent(logoElement, searchElement, searchFormElement,
-                searchTextElement, searchBtnElement, emptyInfoElement, infoElement, newTitleName);
+            Disguise._hideContent(logoElement, infoElement);
         } else {
-            Disguise._showContent(logoElement, infoElement, newTitleName);
+            Disguise._showContent(logoElement, infoElement);
         }
     }
 
-    static _hideContent(logoElement, searchElement, searchFormElement, searchTextElement,
-                        searchBtnElement, emptyInfoElement, infoElement, newTitleName) {
+    static _hideContent(logoElement, infoElement) {
+        let searchElement = document.getElementById("search");
+        let searchTextElement = document.getElementById("search-text");
+
         const logo = new Logo(logoElement, searchElement, searchTextElement);
         logo.activateListeningOfMouseClick();
         logo.activateListeningOfKeyPress();
 
-        const searchForm = new SearchForm(searchElement, searchFormElement, searchTextElement,
-            searchBtnElement, emptyInfoElement, infoElement, newTitleName);
-        searchForm.activateListeningOfFormActions();
+        new SearchForm(infoElement, searchElement, searchTextElement, Disguise.NEW_TITLE_NAME)
+            .activateListeningOfFormActions();
     }
 
-    static _showContent(logoElement, infoElement, newTitleName) {
+    static _showContent(logoElement, infoElement) {
         // removes logoElement
         logoElement.outerHTML = "";
         // shows information block
         infoElement.hidden = false;
         // sets new text for the title
-        document.title = newTitleName;
+        document.title = Disguise.NEW_TITLE_NAME;
     }
 }
