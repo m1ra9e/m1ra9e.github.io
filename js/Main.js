@@ -4,4 +4,3 @@ import Tabs from "./modules/tabs/Tabs.js";
 Disguise.mask(true);
 
 Tabs.activateTabMechanism();
-
