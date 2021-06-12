@@ -12,6 +12,13 @@ export default class Tabs {
         for (let i = 0; i < tabCloseElements.length; i++) {
             tabCloseElements[i].onclick = (event) => Tabs._closeTab(event);
         }
+
+        Tabs._openFirsTab(tabLinkElements, tabContentElements);
+    }
+
+    static _openFirsTab(tabLinkElements, tabContentElements) {
+        tabLinkElements[0].className += " active";
+        tabContentElements[0].style.display = "block";
     }
 
     static _openTab(event, tabLinkElements, tabContentElements) {

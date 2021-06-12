@@ -6,6 +6,11 @@
     overflow: hidden;
     border: 1px solid #ccc;
     background-color: #7B7B7B;
+
+    /* Кроссбраузерное скругление углов средствами CSS */
+    -webkit-border-radius: 8px 8px 0 0; /* Safari and Chrome */
+    -moz-border-radius: 8px 8px 0 0; /* Firefox */
+    border-radius: 8px 8px 0 0; /* Opera 10.5+, future browsers, and now also Internet Explorer 6+ using IE-CSS3 */
 }
 
 /* Style the buttons that are used to open the tab content */
