@@ -14,12 +14,9 @@ if (isIE) {
 
     // shows confirm window with message
     var newLine = "\r\n";
-    var notSupportedTxt;
-    if (IS_EDGE_BROWSER_DETECT_TOO) {
-        notSupportedTxt = "Internet Explorer and Microsoft Edge browsers are not supported.";
-    } else {
-        notSupportedTxt = "Internet Explorer browser is not supported.";
-    }
+    var notSupportedTxt = IS_EDGE_BROWSER_DETECT_TOO
+        ? "Internet Explorer and Microsoft Edge browsers are not supported."
+        : "Internet Explorer browser is not supported.";
     var msg = "Hello!"
         + newLine
         + newLine + notSupportedTxt
