@@ -9,6 +9,11 @@ function addStyle(fileName, timestamp) {
     document.head.appendChild(style);
 }
 
+function isMobileDevice() {
+    return /Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i
+        .test(navigator.userAgent);
+}
+
 let timestamp = new Date().getTime();
 
 addStyle("common.css", timestamp);
@@ -16,4 +21,7 @@ addStyle("disguise.css", timestamp);
 addStyle("creeping_line.css", timestamp);
 addStyle("info.css", timestamp);
 addStyle("tabs.css", timestamp);
-addStyle("side_elements.css", timestamp);
+
+if (!isMobileDevice()) {
+    addStyle("side_elements.css", timestamp);
+}
