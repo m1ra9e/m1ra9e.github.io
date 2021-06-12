@@ -52,7 +52,6 @@
     -webkit-border-radius: 8px; /* Safari and Chrome */
     -moz-border-radius: 8px; /* Firefox */
     border-radius: 8px; /* Opera 10.5+, future browsers, and now also Internet Explorer 6+ using IE-CSS3 */
-    behavior: url(pie/PIE.htc); /* Для IE. This lets IE know to call the script on all elements which get the 'box' class */
 }
 
 /* Концовка Кроссбраузерное скругление углов средствами CSS */
