@@ -16,3 +16,4 @@ addStyle("disguise.css", timestamp);
 addStyle("creeping_line.css", timestamp);
 addStyle("info.css", timestamp);
 addStyle("tabs.css", timestamp);
+addStyle("side_elements.css", timestamp);
