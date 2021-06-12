@@ -1,66 +1,20 @@
 /* Боковые картинки-ссылки */
 
 #arrow {
-    position: fixed;
-    width: 22px;
-    height: 180px;
-    top: 150px;
-    left: 0;
-}
-
-#arrow img {
-    border: none;
-    text-decoration: none;
-}
-
-#arrow img:hover {
-    border: 2px solid #FFFFFF;
-    text-decoration: none;
+    display: none;
 }
 
 #message {
-    position: fixed;
-    width: 22px;
-    height: 180px;
-    top: 400px;
-    left: 0;
-}
-
-#message img {
-    border: none;
-    text-decoration: none;
-}
-
-#message img:hover {
-    border: 2px solid #FFFFFF;
-    text-decoration: none;
+    display: none;
 }
 
 /* концовка Боковые картинки-ссылки */
 
 
-img {
-    border: none;
-}
-
-
 /* Угловая картинка-ссылка */
 
 #new {
-    position: absolute;
-    left: 0;
-    top: 0;
-}
-
-#new img {
-    border: none;
-    text-decoration: none;
-}
-
-#new img:hover {
-    border-left: 2px solid #FFFFFF;
-    border-top: 2px solid #FFFFFF;
-    text-decoration: none;
+    display: none;
 }
 
 /* концовка Угловая картинка-ссылка */
