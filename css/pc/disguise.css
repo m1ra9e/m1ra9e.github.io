@@ -1,0 +1,112 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* ============================= Маскировка ============================ */
+
+/* ---------------------------------- Стиль для лого ----------------------------------- */
+
+/* задание поведения как для ссылки */
+#logo {
+    cursor: pointer;
+    color: #5F870E;
+    text-decoration: underline;
+}
+
+/* центрирование по горизонтали и вертикали с учетом размеров картинки */
+#logo {
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+/* установка динамичной фоновой картинки для элемента */
+#logo {
+    display: block;
+    text-indent: -9999px;
+    background: url(../../img/logo_text.png) 0 0 no-repeat;
+    width: 240px;
+    height: 44px
+}
+
+#logo:hover {
+    display: block;
+    text-indent: -9999px;
+    background: url(../../img/logo_cat_eyes.png) 0 0 no-repeat;
+    width: 240px;
+    height: 44px
+}
+
+#logo:active {
+    display: block;
+    text-indent: -9999px;
+    background: url(../../img/logo_cat_eyes_active.png) 0 0 no-repeat;
+    width: 240px;
+    height: 44px
+}
+
+/* ------------------------------ Концовка Стиль для лого ------------------------------ */
+
+/* ------------------------------ Стиль для поиска ------------------------------ */
+
+/* центрирование по горизонтали и вертикали */
+#search {
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+#search-text {
+    width: 300px;
+    height: 30px;
+    border-radius: 25px;
+    padding: 5px;
+    border: 2px solid #5F870E;
+    outline: none;
+    background: darkgray;
+}
+
+/* задание поведения как для ссылки */
+#search-btn {
+    cursor: pointer;
+    color: #000000;
+    font-size: 20px;
+    background: #5F870E;
+}
+
+#search-btn:hover {
+    background: darkgray;
+}
+
+#search-btn:active {
+    color: darkgray;
+    background: #000000;
+    border: 2px solid darkgray;
+}
+
+#search-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 25px;
+    border: 2px solid #5F870E;
+    outline: none;
+    padding: 5px;
+}
+
+/* ------------------------- Концовка Стиль для поиска -------------------------- */
+
+/* ------------------------- Стиль для текста в пустом блоке информации -------------------------- */
+#empty-info p {
+    margin-top: 60px;
+    text-align: center;
+}
+
+#empty-info p span {
+    color: black;
+    background: darkred;
+}
+
+/* ------------------------- Концовка Стиль для текста в пустом блоке информации -------------------------- */
+
+/* ============================= Концовка Маскировки ============================ */

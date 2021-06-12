@@ -1,0 +1,213 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/* ---------------------------------- Каркас сайта ----------------------------------- */
+
+/* Каркас */
+
+#wrapper {
+    background-color: #767676;
+    min-width: 840px;
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 10px;
+    font-family: Arial, Verdana, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+#header {
+    background-color: #CCCCCC;
+    margin-bottom: 12px;
+    padding: 5px;
+}
+
+#spec_mes {
+    background-color: #CCCCCC;
+    margin-bottom: 12px;
+    padding: 1px;
+}
+
+#runner {
+    background-color: #5F870E;
+    margin-bottom: 12px;
+}
+
+#content {
+    background-color: #CCCCCC;
+    margin-bottom: 12px;
+    padding: 5px;
+}
+
+#footer {
+    background-color: #CCCCCC;
+    padding: 5px;
+}
+
+/* Концовка Каркас */
+
+/* Кроссбраузерное скругление углов средствами CSS */
+
+.box {
+    -webkit-border-radius: 8px; /* Safari and Chrome */
+    -moz-border-radius: 8px; /* Firefox */
+    border-radius: 8px; /* Opera 10.5+, future browsers, and now also Internet Explorer 6+ using IE-CSS3 */
+}
+
+/* Концовка Кроссбраузерное скругление углов средствами CSS */
+
+/* Очистка обтекания */
+
+.clear {
+    clear: both;
+}
+
+/* Концовка Очистка обтекания */
+
+/* ------------------------------ Концовка Каркас сайта ------------------------------ */
+
+/* ==================================================================================================== */
+
+/* ------------------------------ Оформление текста ------------------------------ */
+
+/* Текс */
+
+#wrapper p {
+    font-family: Arial, Verdana, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #000000;
+    margin: 10px;
+}
+
+#italic {
+    font-style: italic;
+    color: #7B7B7B;
+}
+
+#little {
+    font-family: Arial, Verdana, Helvetica, sans-serif;
+    font-style: italic;
+    font-size: 12px;
+    color: #7B7B7B;
+}
+
+#bottom_words { /* Стиль для Футера (hunter) */
+    font-family: Arial, Verdana, Helvetica, sans-serif;
+    font-style: italic;
+    font-size: 12px;
+    color: #7B7B7B;
+}
+
+/* Концовка Текс */
+
+/* Ссылки */
+
+#content a:link { /* Контент (Стиль для обычной непосещенной ссылки) */
+    color: #5F870E;
+}
+
+#content a:visited /* Контент (Стиль для посещенной ссылки) */
+{
+    color: #5F870E;
+}
+
+#content a:active /* Контент (Стиль для активной ссылки. Активной ссылка становится при нажатии на нее.) */
+{
+    color: #127B9B;
+}
+
+#content a:hover /* Контент (Стиль для ссылки при наведении на нее мышью.) */
+{
+    color: darkgray;
+}
+
+#footer a /* Футер (Стиль для ссылки) */
+{
+    color: #000000;
+}
+
+#footer a:hover /* Футер (Стиль для ссылки при наведении) */
+{
+    color: darkgray;
+    background-color: #000000;
+}
+
+/* Концовка Ссылки */
+
+/* -------------------------- Концовка Оформление текста ------------------------- */
+
+/* ==================================================================================================== */
+
+/* ------------------------------ Кнопки ------------------------------ */
+
+/* Кнопка-ссылка */
+
+#button_header {
+    margin-top: 10px;
+    /* float:left; */ /* Обтекание кнопки в header'е */
+}
+
+#button_header a /* Кнопка в header'е */
+{
+    color: #000000;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    border: 1px solid #000000;
+    background-color: #5F870E;
+    padding: 3px;
+}
+
+#button_header a:hover /* Кнопка в header'е под мышкой*/
+{
+    color: #000000;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    border: 1px solid #000000;
+    background-color: darkgray;
+    padding: 3px;
+}
+
+#button_header a:active /* Кнопка в header'е активна. Активной кнопка становится при нажатии на нее.*/
+{
+    color: darkgray;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    border: 1px solid darkgray;
+    background-color: #000000;
+    padding: 3px;
+}
+
+/* Концовка Кнопка-ссылка */
+
+/* Кнопка-ссылка */
+#button a {
+    border: 1px solid #000000;
+    color: black;
+    background-color: #5F870E;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 3px;
+    right: 50px; /* отступ справа */
+}
+
+#button a:hover {
+    border: 1px solid #000000;
+    background-color: darkgray;
+    color: #000000;
+}
+
+#button a:active {
+    border: 1px solid darkgray;
+    background-color: #000000;
+    color: darkgray;
+}
+
+/* Концовка Кнопка-ссылка в слайдере */
+
+/* -------------------------- Концовка Кнопки ------------------------- */
+
+/* ==================================================================================================== */

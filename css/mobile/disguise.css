@@ -24,7 +24,7 @@
 #logo {
     display: block;
     text-indent: -9999px;
-    background: url(../img/logo_text.png) 0 0 no-repeat;
+    background: url(../../img/logo_text.png) 0 0 no-repeat;
     width: 240px;
     height: 44px
 }
@@ -32,7 +32,7 @@
 #logo:hover {
     display: block;
     text-indent: -9999px;
-    background: url(../img/logo_cat_eyes.png) 0 0 no-repeat;
+    background: url(../../img/logo_cat_eyes.png) 0 0 no-repeat;
     width: 240px;
     height: 44px
 }
@@ -40,7 +40,7 @@
 #logo:active {
     display: block;
     text-indent: -9999px;
-    background: url(../img/logo_cat_eyes_active.png) 0 0 no-repeat;
+    background: url(../../img/logo_cat_eyes_active.png) 0 0 no-repeat;
     width: 240px;
     height: 44px
 }
