@@ -3,9 +3,9 @@ var IS_EDGE_BROWSER_DETECT_TOO = true;
 var userAgent = window.navigator.userAgent;
 var isIE;
 if (IS_EDGE_BROWSER_DETECT_TOO) {
-    isIE = /MSIE|Trident|Edge\//.test(userAgent);
+    isIE = /MSIE|IEMobile|Trident|Edge\//.test(userAgent);
 } else {
-    isIE = /MSIE|Trident/.test(userAgent);
+    isIE = /MSIE|IEMobile|Trident/.test(userAgent);
 }
 
 if (isIE) {
@@ -14,13 +14,15 @@ if (isIE) {
 
     // shows confirm window with message
     var newLine = "\r\n";
-    var browser = "Internet Explorer";
+    var notSupportedTxt;
     if (IS_EDGE_BROWSER_DETECT_TOO) {
-        browser += " and Microsoft Edge";
+        notSupportedTxt = "Internet Explorer and Microsoft Edge browsers are not supported.";
+    } else {
+        notSupportedTxt = "Internet Explorer browser is not supported.";
     }
     var msg = "Hello!"
         + newLine
-        + newLine + "Browser " + browser + " is not supported."
+        + newLine + notSupportedTxt
         + newLine
         + newLine + "Please, use another browser, for example:"
         + newLine + "Mozilla Firefox, Opera, Google Chrome."
